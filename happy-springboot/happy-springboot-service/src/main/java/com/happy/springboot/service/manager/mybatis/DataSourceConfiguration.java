@@ -5,7 +5,6 @@ import java.sql.SQLException;
 import javax.annotation.Resource;
 import javax.sql.DataSource;
 
-import org.apache.ibatis.plugin.Interceptor;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -22,7 +21,6 @@ import org.springframework.transaction.annotation.TransactionManagementConfigure
 import com.alibaba.druid.pool.DruidDataSource;
 import com.happy.springboot.service.exception.BizException;
 import com.happy.springboot.service.manager.dyndatasource.core.DyncRouteDataSource;
-import com.happy.springboot.service.manager.dyndatasource.interceptor.DyncTableInterceptor;
 
 
 @Configuration
